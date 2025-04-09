@@ -4,7 +4,9 @@
 
 Company context 
 
-The refurbished and used mobile device market has experienced significant growth in recent years, driven by consumer demand for affordable alternatives, increasing environmental awareness, and support from third-party platforms like Amazon and Verizon. According to the International Data Corporation (IDC), this market was projected to reach $52.7 billion by 2023, with a 13.6% compound annual growth rate from 2018 to 2023. These trends are also fueled by the impact of the COVID-19 pandemic, which shifted consumer priorities toward practicality and cost-efficiency.ReCell, a startup aiming to tap into this rapidly expanding segment, is focused on developing a dynamic pricing strategy using data science. By leveraging historical device data and predictive modeling, ReCell seeks to optimize resale prices, identify key factors that influence device value, and ultimately maximize revenue while offering competitive pricing to customers. 
+ReCell is a startup aiming to tap into the rapidly growing market of refurbished and used mobile devices by leveraging the power of data science. The company seeks to develop a dynamic pricing strategy that optimizes resale prices, identifies the key factors that influence device value, and maximizes revenue—all while offering competitive prices to customers and promoting sustainable consumption.
+
+This focus aligns with broader market trends: the refurbished and used device segment has experienced significant growth in recent years, driven by consumer demand for affordable alternatives, increasing environmental awareness, and support from third-party platforms such as Amazon and Verizon. According to the International Data Corporation (IDC), this market was projected to reach $52.7 billion by 2023, with a compound annual growth rate of 13.6% between 2018 and 2023. The impact of the COVID-19 pandemic further accelerated this shift, pushing consumers toward more practical and cost-efficient buying decisions.
 
 Objective 
 
