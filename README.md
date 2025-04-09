@@ -1,1 +1,1 @@
-# -Regression-Model-to-Improve-Resale-Value-Strategy
+# Improve_Resale_Value_Strategy
