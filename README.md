@@ -2,7 +2,7 @@
 
 ![image](https://github.com/user-attachments/assets/68bfad6f-8fc9-4cfa-a125-6901881bb1e8)
 
-## Context
+## Company Context
 
 <div align="justify">
 
@@ -12,7 +12,7 @@ ReCell’s strategy is grounded in larger industry trends. The refurbished devic
 
 </div>
 
-### Objective
+### Company Objective
 
 <div align="justify">
 
