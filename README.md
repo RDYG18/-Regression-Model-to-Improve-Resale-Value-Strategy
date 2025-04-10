@@ -90,12 +90,21 @@ Bivariate Analysis
 
  **Negative Correlations**  
 
-- years_since_release and selfie_camera_mp (-0.69): Older devices tend to have lower resolution front cameras
+- days_used and selfie_camera_mp (-0.69): Older devices tend to have lower resolution front cameras
 
-- years_since_release and normalized_used_price (-0.51): Resale value decreases as devices age
+- days_used and normalized_used_price (-0.51): Resale value decreases as devices age
 
-- years_since_release and battery (-0.49): Older models often have smaller or more degraded batteries
+- days_used and battery (-0.49): Older models often have smaller or more degraded batteries
 
 - days_used and selfie_camera_mp (-0.55): Devices that have been used longer are typically older models with lower camera specs
+
+**Potential Collinearity**
+
+The variables screen_size, battery, and weight are highly correlated with each other, which may lead to multicollinearity issues. Similarly, normalized_used_price and normalized_new_price show strong correlation, potentially introducing redundancy if both are used as predictors. For this reason, and as previously mentioned, the focus is placed solely on normalized_used_price.
+
+
+
+
+
 
   
