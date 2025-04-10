@@ -2,12 +2,20 @@
 
 ![image](https://github.com/user-attachments/assets/68bfad6f-8fc9-4cfa-a125-6901881bb1e8)
 
-Company context 
+## Context
 
-ReCell is a startup aiming to tap into the rapidly growing market of refurbished and used mobile devices by leveraging the power of data science. The company seeks to develop a dynamic pricing strategy that optimizes resale prices, identifies the key factors that influence device value, and maximizes revenue—all while offering competitive prices to customers and promoting sustainable consumption.
+<div align="justify">
 
-This focus aligns with broader market trends: the refurbished and used device segment has experienced significant growth in recent years, driven by consumer demand for affordable alternatives, increasing environmental awareness, and support from third-party platforms such as Amazon and Verizon. According to the International Data Corporation (IDC), this market was projected to reach $52.7 billion by 2023, with a compound annual growth rate of 13.6% between 2018 and 2023. The impact of the COVID-19 pandemic further accelerated this shift, pushing consumers toward more practical and cost-efficient buying decisions.
+In this project, I collaborated with ReCell, a startup aiming to capture value in the rapidly growing market of refurbished and used mobile devices. Recognizing a shift in consumer behavior and a clear market opportunity, the company is leveraging data science to build a dynamic pricing strategy that accurately predicts resale value, identifies the key features influencing pricing, and ultimately maximizes revenue while remaining competitive and promoting sustainable consumption.
 
-Objective 
+ReCell’s strategy is grounded in larger industry trends. The refurbished device market has experienced substantial growth in recent years, driven by increasing demand for affordable alternatives, rising environmental awareness, and strong support from third-party platforms like Amazon and Verizon. According to IDC, the market was projected to reach $52.7 billion by 2023, with a CAGR of 13.6% between 2018 and 2023. The COVID-19 pandemic further accelerated this momentum, as consumers turned toward more practical and sustainable tech solutions.
 
- This project builds a linear regression model to predict resale prices of used and refurbished phones and tablets, identifying the key features that influence value.
+</div>
+
+### Objective
+
+<div align="justify">
+
+ReCell needed a predictive model to estimate resale prices based on device attributes, helping them identify which features most strongly influence value and guide smarter pricing decisions.
+
+</div>
