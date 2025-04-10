@@ -12,10 +12,44 @@ ReCell’s strategy is grounded in larger industry trends. The refurbished devic
 
 </div>
 
-### Company Objective
+## Company Objective
 
 <div align="justify">
 
 ReCell needed a predictive model to estimate resale prices based on device attributes, helping them identify which features most strongly influence value and guide smarter pricing decisions.
 
 </div>
+
+## 📂Dataset
+
+### Dataset Overview
+The original dataset contained 3,454 rows and 15 columns. An additional 5,000 synthetic rows were generated to simulate a larger dataset for modeling and analytical purposes, resulting in a total of 8,454 observations with the same structure.
+
+#### Device specs:
+Device Specifications:
+brand_name, os, screen_size, main_camera_mp, selfie_camera_mp, int_memory, ram, battery, weight, 4g, 5g
+
+#### Usage & Pricing Data:
+release_year, days_used, normalized_new_price, normalized_used_price
+
+### 📌Notes: 
+The target variable is **normalized_used_price**, representing the resale price normalized across brands/models.
+
+#### Missing Values:
+To simulate real world data imperfections, a proportion of missing values was intentionally introduced in the synthetic portion of the dataset. These missing values follow the same patterns and frequencies as those found in the original data.
+
+main_camera_mp: 438 missing
+
+selfie_camera_mp: 4 missing
+
+int_memory: 9 missing
+
+ram: 9 missing
+
+battery: 14 missing
+
+weight: 17 missing
+
+**Note on Data Augmentation:**
+Synthetic rows were generated to simulate a larger dataset for educational purposes.
+This expansion helps apply more advanced modeling techniques and demonstrate scalability, model behavior, and data interpretation, while preserving the original data structure and missing value patterns.
