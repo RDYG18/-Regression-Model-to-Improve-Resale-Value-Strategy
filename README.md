@@ -55,6 +55,8 @@ To simulate real world data imperfections, a proportion of missing values was in
 
 #### Variable distributions
 
+Univariate Analysis 
+
 Both normalized used and new device prices show an approximately normal distribution, with slight skewness and some outliers.
 
 <table>
@@ -71,5 +73,29 @@ Samsung, Huawei, and LG are the most represented brands in the dataset, excludin
   <img src="https://github.com/user-attachments/assets/f392e1d8-2774-497b-ab6e-af877f7acf1f" width="400" style="display:inline-block; vertical-align:top;"/>
 </p>
 
+Bivariate Analysis 
+
+
+![image](https://github.com/user-attachments/assets/7814462f-e070-43c7-9745-b27e34976776)
+
+**Positive Correlations** (Potential Collinearity) 
+
+- screen_size and battery (0.81): Devices with larger screens typically have higher battery capacities, which is expected due to increased power consumption.
+
+- screen_size and weight (0.83): Larger screens often contribute to increased device weight.
+
+- battery and weight (0.70): Bigger batteries tend to add more weight to the device.
+
+- normalized_used_price and normalized_new_price (0.83): The used price is heavily influenced by the original retail price.
+
+ **Negative Correlations**  
+
+- years_since_release and selfie_camera_mp (-0.69): Older devices tend to have lower resolution front cameras
+
+- years_since_release and normalized_used_price (-0.51): Resale value decreases as devices age
+
+- years_since_release and battery (-0.49): Older models often have smaller or more degraded batteries
+
+- days_used and selfie_camera_mp (-0.55): Devices that have been used longer are typically older models with lower camera specs
 
   
