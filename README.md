@@ -152,7 +152,8 @@ The demand for large screens, driven by entertainment and social media use, is p
  **note**: This barplot includes only devices with screen sizes larger than 6 inches (the standard threshold) to focus on phones with larger displays. The shape of the filtered dataset is (2511, 15).
 
 
-![image](https://github.com/user-attachments/assets/c5e4158d-63ae-4c7e-b30c-b0719d9915ba)
+<img src="https://github.com/user-attachments/assets/c5e4158d-63ae-4c7e-b30c-b0719d9915ba" width="870"/>
+
 
 
 Barplot insights: 
