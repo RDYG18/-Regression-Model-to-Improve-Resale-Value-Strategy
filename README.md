@@ -77,7 +77,8 @@ Samsung, Huawei, and LG are the most represented brands in the dataset, excludin
 Bivariate Analysis
 
 
-![image](https://github.com/user-attachments/assets/7814462f-e070-43c7-9745-b27e34976776)
+<img src="https://github.com/user-attachments/assets/7814462f-e070-43c7-9745-b27e34976776" width="800"/>
+
 
 **Positive Correlations** (Potential Collinearity) 
 
@@ -152,7 +153,7 @@ The demand for large screens, driven by entertainment and social media use, is p
  **note**: This barplot includes only devices with screen sizes larger than 6 inches (the standard threshold) to focus on phones with larger displays. The shape of the filtered dataset is (2511, 15).
 
 
-<img src="https://github.com/user-attachments/assets/c5e4158d-63ae-4c7e-b30c-b0719d9915ba" width="870"/>
+<img src="https://github.com/user-attachments/assets/c5e4158d-63ae-4c7e-b30c-b0719d9915ba" width="800"/>
 
 
 
