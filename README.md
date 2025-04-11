@@ -176,7 +176,7 @@ One of the most important aspects of a phone or tablet perhaps the most importan
 
  **note**: In order to analyze which brands offer the best selfie cameras on the market, we filtered the dataset to include only devices with front cameras higher than 8 MP. The shape of the filtered dataset is (1494,15).
 
- ![image](https://github.com/user-attachments/assets/ff35446f-f6ba-4206-af41-ce9f45e61f72)
+ <img src="https://github.com/user-attachments/assets/ff35446f-f6ba-4206-af41-ce9f45e61f72" width="800"/>
 
  barplot insights: 
 
@@ -197,7 +197,8 @@ While the selfie camera plays a key role in today’s social media-driven usage,
 
 **note**: In order to analyze which brands offer the best main cameras on the market, we filtered the dataset to include only devices with main cameras higher than 16 MP. The shape of the filtered dataset is (218,15).
 
-![image](https://github.com/user-attachments/assets/d4ccdc27-812d-4326-8b4d-1cefc2842fe1)
+<img src="https://github.com/user-attachments/assets/d4ccdc27-812d-4326-8b4d-1cefc2842fe1" width="800"/>
+
 
 barplot insights: 
 
@@ -228,7 +229,7 @@ PRICES ACROSS YEARS
 
 From 2013 to 2019, used device prices showed a steady increase, suggesting that newer models retain more resale value. Although there was a slight drop in 2020 possibly due to market saturation or rapid technological advancement the overall trend indicates that used phones are becoming more valuable, driven by better durability, higher original prices, and growing interest in sustainable tech.
 
-  ![image](https://github.com/user-attachments/assets/e289b222-5b60-4b19-a66e-cb5cc972ba60)
+  <img src="https://github.com/user-attachments/assets/e289b222-5b60-4b19-a66e-cb5cc972ba60" width="800"/>
 
 ---
 # Data Preprocessing
