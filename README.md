@@ -77,7 +77,7 @@ Samsung, Huawei, and LG are the most represented brands in the dataset, excludin
 Bivariate Analysis
 
 
-<img src="https://github.com/user-attachments/assets/7814462f-e070-43c7-9745-b27e34976776" width="800"/>
+<img src="https://github.com/user-attachments/assets/7814462f-e070-43c7-9745-b27e34976776" width="870"/>
 
 
 **Positive Correlations** (Potential Collinearity) 
