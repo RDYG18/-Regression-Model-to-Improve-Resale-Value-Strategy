@@ -233,3 +233,10 @@ From 2013 to 2019, used device prices showed a steady increase, suggesting that 
 
 ---
 # Data Preprocessing
+
+## Missing value tratment 
+
+As mentioned earlier, we identified 491 missing values in key columns such as main_camera_mp, selfie_camera_mp, int_memory, ram, battery, and weight. To handle them, we applied group-based imputation by grouping the data by brand_name and release_year—two columns without missing values. We used the median within each group to fill the missing values, as these columns contain outliers and the median is more robust than the mean. This method provides more accurate and context-aware imputations compared to using a single global value.
+
+![image](https://github.com/user-attachments/assets/92f53a77-a8ef-4d50-9eb9-f97dc2251d8e)
+
