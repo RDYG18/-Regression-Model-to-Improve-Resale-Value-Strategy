@@ -104,7 +104,90 @@ Bivariate Analysis
 The variables screen_size, battery, and weight are highly correlated with each other, which may lead to multicollinearity issues. Similarly, normalized_used_price and normalized_new_price show strong correlation, potentially introducing redundancy if both are used as predictors. For this reason, and as previously mentioned, the focus is placed solely on normalized_used_price.
 
 
+**Analysis of Important Variables as Price Influencers**
 
+---
+RAM
+
+The RAM is one of the most important components of a phone, as it directly affects the device's speed, multitasking capabilities, and overall user experience. In other words brands with higher RAM models may demand higher resale prices and target different customer segments.  
+
+
+![image](https://github.com/user-attachments/assets/7f816ea0-f9c7-4ba4-8d84-25e8b06c0e19)
+
+Boxplot insights: 
+
+- **OnePlus**, **Nokia**, **Honor**, and **Huawei** offer higher RAM devices, meaning targeting mid to high end segments.
+
+- **Infinix**, **Micromax**, and **Karbonn** consistently feature lower RAM, focusing on the budget market.
+
+- **Samsung**, **Xiaomi**, **Oppo**, and **Vivo** show a wide range of RAM values, reflecting a diverse lineup from entry level to premium models.
+
+- **Apple** maintains lower RAM levels, consistent with its hardware software optimization strategy.
+
+---
+BATERRY
+
+Since smartphones have become an essential tool in our daily lives, we need devices with high battery capacity to support daily usage. However, as observed in the correlation heatmap and weight distribution analysis, an increase in battery capacity often results in a heavier devices. 
+
+ **note**: For this boxplot, I selected devices with battery capacities above 4500 mAh in order to focus on models with large batteries.  
+
+![image](https://github.com/user-attachments/assets/e466c6a6-c758-482f-ab1a-b0200c378e4e)
+
+Boxplot insights: 
+
+- **Huawei**, **Lenovo**, **LG**, **Apple**, **Asus**, **Acer**, **Alcatel**, and **Samsung** show high median weights, often exceeding 400g, likely due to large batteries or heavier components.
+
+- **Lenovo** and **LG** stand out for having wide weight variability, suggesting robust or large sized device designs.
+
+- **Honor**, **ZTE**, and **Xiaomi** have lower median weights (around 200–250g), indicating a good balance between battery capacity and lightweight design.
+
+- **Infinix**, **Vivo**, **Realme**, **Google**, and **Gionee** display compact weight distributions, reflecting consistency in design with minimal variation.
+
+- **Samsung**, **Apple**, and **Huawei** present notable outliers, pointing to some heavier models, possibly due to premium materials or larger displays.
+
+---
+SCREEN
+
+The demand for large screens, driven by entertainment and social media use, is pushing users to buy better phones and tablets increasing device prices.  
+
+ **note**: This barplot includes only devices with screen sizes larger than 6 inches (the standard threshold) to focus on phones with larger displays. The shape of the filtered dataset is (2511, 15).
+
+
+![image](https://github.com/user-attachments/assets/c5e4158d-63ae-4c7e-b30c-b0719d9915ba)
+
+
+Barplot insights: 
+
+- **Huawei** and **Samsung** lead in large-screen devices, with 382 and 326 models respectively, highlighting a strong focus on display size.
+
+- The **"Others"** category also contributes significantly, showing that the large-screen trend extends beyond major brands.
+
+- **Honor** and **Vivo** follow with over 170 devices each, suggesting that large screens are standard across their product lines.
+
+- **Lenovo**, **LG**, and **Xiaomi** maintain solid counts above 140, indicating a balance between screen size, performance, and affordability.
+
+- **Oppo** and **Asus**, while lower in count, still offer large-screen models, likely focusing on other components .
+
+---
+SELFIE CAMERA
+
+One of the most important aspects of a phone or tablet perhaps the most important is the camera. In particular, the selfie camera plays a key role, as a high quality front camera often increases the device’s price.
+
+ **note**: In order to analyze which brands offer the best selfie cameras on the market, we filtered the dataset to include only devices with front cameras higher than 8 MP. The shape of the filtered dataset is (1494,15).
+
+ ![image](https://github.com/user-attachments/assets/ff35446f-f6ba-4206-af41-ce9f45e61f72)
+
+ barplot insights: 
+
+ - **Huawei** leads featuring front cameras above 8 MP, showing a strong focus on selfie camera quality.
+
+- **Vivo**, **Samsung**, and **Oppo** follow closely, reinforcing their position in selfie focused markets.
+
+- **Xiaomi** and **Honor** also contribute significantly,reflecting strong mid range camera offerings.
+
+- **LG**, **Motorola**, and **ZTE** appear at the lower end, possibly indicating less emphasis on front camera resolution.
+
+- The **"Others"** category, suggests that many lesser-known brands also compete in the high selfie camera segment.
 
 
 
