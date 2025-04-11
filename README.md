@@ -189,6 +189,45 @@ One of the most important aspects of a phone or tablet perhaps the most importan
 
 - The **"Others"** category, suggests that many lesser-known brands also compete in the high selfie camera segment.
 
+---
+MAIN CAMERA
+
+While the selfie camera plays a key role in today’s social media-driven usage, the main (rear) camera remains a critical factor in a device’s overall value and performance. High resolution rear cameras are strongly associated with premium models, as they are essential for photography, video recording, and professional content creation.
+
+**note**: In order to analyze which brands offer the best main cameras on the market, we filtered the dataset to include only devices with main cameras higher than 16 MP. The shape of the filtered dataset is (218,15).
+
+![image](https://github.com/user-attachments/assets/d4ccdc27-812d-4326-8b4d-1cefc2842fe1)
+
+barplot insights: 
+
+- **Sony** leads the category, highlighting a strong focus on high quality main cameras.
+
+- **Motorola** and **"Others"** also are in the podium of main cameras.  
+
+- **HTC**, **ZTE**, **Nokia**, and **Microsoft** fall in the mid-range, indicating a moderate emphasis on main camera resolution.
+
+- **Meizu**, **Samsung**, and **Asus** appear at the lower end, suggesting they either prioritize other features or offer more balanced camera specifications.
+
+---
+4G OR 5G NETWORKS
+
+The presence of 4G and 5G connectivity features affects the normalized resale price of phones and tablets in the second hand market. 
+
+![image](https://github.com/user-attachments/assets/4faca113-65a2-470a-bcae-3cb09ea49ccc)
+
+boxplot insights: 
+
+- Devices with 4G support have higher and more consistent resale prices, confirming 4G as a standard feature in the used market.
+
+- 5G enabled devices show even higher median prices, often linked to newer or premium models especially considering that, at the time this data was collected, 5G was still an emerging technology.
 
 
-  
+---
+PRICES ACROSS YEARS
+
+From 2013 to 2019, used device prices showed a steady increase, suggesting that newer models retain more resale value. Although there was a slight drop in 2020 possibly due to market saturation or rapid technological advancement the overall trend indicates that used phones are becoming more valuable, driven by better durability, higher original prices, and growing interest in sustainable tech.
+
+  ![image](https://github.com/user-attachments/assets/e289b222-5b60-4b19-a66e-cb5cc972ba60)
+
+---
+# Data Preprocessing
