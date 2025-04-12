@@ -241,8 +241,8 @@ As mentioned earlier, we identified 491 missing values in key columns such as ma
 
 <table>
   <tr>
-    <td><img src="https://github.com/user-attachments/assets/b70c08b1-01e4-45d4-b70c-9d08d0907699" width="400"/></td>
-    <td><img src="https://github.com/user-attachments/assets/9cefb3d4-8d9c-4a1c-9733-8eec5620700d" width="400"/></td>
+    <td><img src="https://github.com/user-attachments/assets/b70c08b1-01e4-45d4-b70c-9d08d0907699" width="200"/></td>
+    <td><img src="https://github.com/user-attachments/assets/9cefb3d4-8d9c-4a1c-9733-8eec5620700d" width="200"/></td>
   </tr>
 </table>
 
@@ -251,7 +251,7 @@ As mentioned earlier, we identified 491 missing values in key columns such as ma
 
 We are going to create a new column, years_since_release, by calculating the difference between the current year (2021) and the release_year of the product, using 2021 as a reference year to avoid altering the analysis of the recorded years. This transformation is more useful than the original release_year because the product's age is often more relevant for predictive models. After creating years_since_release, we drop the release_year column to avoid redundancy.
 
-![image](https://github.com/user-attachments/assets/5c9e6046-fb24-4c2c-be78-e31e168490d3)
+  <img src="https://github.com/user-attachments/assets/5c9e6046-fb24-4c2c-be78-e31e168490d3" width="500"/>
 
 variable insights: 
 
@@ -261,5 +261,6 @@ The majority of devices were released between 3 and 7 years ago, with a median a
 
 There are several outliers present in the dataset. However, we decided not to treat them, as they reflect valid and realistic values rather than errors or anomalies. Removing these points could distort the natural distribution and compromise the integrity of the analysis.
 
-![image](https://github.com/user-attachments/assets/9dd4f5d3-e1c3-4968-97b0-50621709a846)
+
+ <img src="https://github.com/user-attachments/assets/9dd4f5d3-e1c3-4968-97b0-50621709a846" width="500"/>
 
