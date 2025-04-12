@@ -294,7 +294,10 @@ To improve the model, I removed variables with p-values greater than 0.05, as th
 ---
 
 ## Final model 
+
 The final model 
+
+The final linear regression model explains approximately 80% of the variance in the normalized resale price of used devices, achieving a MAPE of ~4.8%, which means it can predict resale prices with a high degree of accuracy. This makes the model reliable and suitable for predictive applications in second-hand electronics pricing.
 
 ![image](https://github.com/user-attachments/assets/89b45ff9-794a-42f8-b9d1-7a66dcc7e733)
 
