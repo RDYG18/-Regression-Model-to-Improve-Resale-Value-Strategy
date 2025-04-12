@@ -264,3 +264,51 @@ There are several outliers present in the dataset. However, we decided not to tr
 
  <img src="https://github.com/user-attachments/assets/9dd4f5d3-e1c3-4968-97b0-50621709a846" width="500"/>
 
+---
+## Data preparation for modeling
+
+To prepare the data for modeling, we first separated the target variable normalized_used_price from the independent variables. We then added a constant term to the features to account for the intercept in the linear regression model. Since the dataset includes categorical features, we applied one-hot encoding using pd.get_dummies, dropping the first level of each category to avoid multicollinearity and converting the result to integer type. After preprocessing, we split the dataset into training and testing sets using a 70:30 ratio with a fixed random state for reproducibility. This setup ensures that the data is clean, numerical, and properly structured for training a Linear Regression model and evaluating its performance on unseen data.
+
+--- 
+
+# Modeling Linear Regression 
+
+ We first trained a baseline linear regression model using all available features after encoding and preprocessing. This initial model served as a reference to identify multicollinearity and statistically insignificant variables, which i will treathtem later. The model’s performance was assessed using standard regression metrics. 
+ 
+![image](https://github.com/user-attachments/assets/cb3a7ebc-5a82-41f1-8aeb-02313f32804f)
+![image](https://github.com/user-attachments/assets/efd22dba-f8c2-4285-b6c8-b90a2e4a582b)
+
+Baseline model insights: 
+
+The model explains over 80% of the variance in the target variable and shows low prediction error on both training and test sets, indicating strong generalization and no overfitting. The MAE is around 0.20, meaning the model predicts normalized prices with a small average error. As expected, RMSE is slightly higher due to its sensitivity to larger errors. A MAPE of ~4.8% confirms the model can predict resale prices within a narrow and acceptable margin of error, making it suitable for real-world applications.
+
+## Test for Multicollinearity and Treatment
+
+To detect multicollinearity among the independent variables, I applied the Variance Inflation Factor (VIF). The test revealed that some numerical variables exhibited high multicollinearity, which could negatively affect the model's reliability. To address this, I removed three variables with high VIF values: screen_size, brand_name_Apple, and brand_name_Others. After dropping these columns, the remaining numerical features showed VIF scores below the common thresholds (under 5 or 10), indicating that multicollinearity was successfully reduced and the model is now more stable and interpretable.
+
+---
+## Treat high p-values 
+
+To improve the model, I removed variables with p-values greater than 0.05, as they are not statistically significant. Since p-values can change when variables are dropped, I applied an iterative approach: at each step, I removed the variable with the highest p-value, rebuilt the model, and repeated the process until all remaining features had p-values ≤ 0.05. This method ensures that only meaningful predictors are retained, improving the model's interpretability and stability.
+
+---
+
+## Final model 
+The final model 
+
+![image](https://github.com/user-attachments/assets/89b45ff9-794a-42f8-b9d1-7a66dcc7e733)
+
+![image](https://github.com/user-attachments/assets/980451c6-bd68-401b-8135-2a97f97c5360)
+
+
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/d20b2577-5518-4d20-baf4-68cf2bf9362b" width="800"/></td>
+    <td><img src="https://github.com/user-attachments/assets/a50646ca-47c9-4527-bbca-9992b357f358" width="800"/></td>
+  </tr>
+</table>
+
+
+
+
+
