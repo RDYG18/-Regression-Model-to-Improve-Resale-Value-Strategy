@@ -295,13 +295,29 @@ To improve the model, I removed variables with p-values greater than 0.05, as th
 
 ## Final model 
 
-The final model 
+The **Linear Regression** model explains **80%** of the variation in resale prices and predicts used device values with an average error of just **4.8%**. This makes it a reliable tool for estimating second-hand value and supporting smarter pricing decisions. Also, the model shows which aspects of a phone increase its resale value and which brands retain their value.
 
-The final linear regression model explains approximately 80% of the variance in the normalized resale price of used devices, achieving a MAPE of ~4.8%, which means it can predict resale prices with a high degree of accuracy. This makes the model reliable and suitable for predictive applications in second-hand electronics pricing.
+### Key Aspects:
+
+- Devices with more memory (**RAM**) are worth more in the second hand market, increasing resale value by **0.0344 units**.
+- Both **rear** and **selfie camera** quality have a positive impact  the higher the megapixels, the better the resale value, increasing it by **0.0261** and **0.0182 units**, respectively.
+- **Heavier phones** tend to have higher resale prices, possibly due to better build quality or more features  increases resale value by **0.0017**.
+- **4G connectivity** increases resale value by **0.0872 units** compared to non 4G devices.
+- The **normalized new price** shows that premium models retain value better, as they often have superior features, materials, and brand reputation.  
+- For every **1 unit increase** in normalized new price, the resale value increases by **0.3005 units** in the normalized used price.
+- **Battery capacity** has a small positive effect, increasing resale value by **0.00001771 units**.
+- **Years since release** negatively impacts price each additional year decreases value by **0.0119 units**.
+- Devices with **uncommon operating systems** tend to have lower resale value, decreasing it by **0.1625 units**.
+
+### Brands Value:
+
+- Brands like **Nokia**, **Xiaomi**, **Asus**, and **BlackBerry** tend to hold value better over the years.
+- **Micromax**, **Motorola**, and **ZTE** have lower resale prices as time passes.
+
 
 ![image](https://github.com/user-attachments/assets/89b45ff9-794a-42f8-b9d1-7a66dcc7e733)
+![image](https://github.com/user-attachments/assets/51004fd7-8ba9-4c20-a62c-39bfb06f6a9c)
 
-![image](https://github.com/user-attachments/assets/980451c6-bd68-401b-8135-2a97f97c5360)
 
 
 <table>
@@ -311,7 +327,21 @@ The final linear regression model explains approximately 80% of the variance in 
   </tr>
 </table>
 
+---
+## Recommendations
+- Focus on acquiring newer devices with higher RAM, quality cameras, and 4G connectivity, as these features are strongly associated with better resale value and greater appeal to second-hand buyers.
 
+- Prioritize sourcing premium models that had a high original price, as they tend to retain more value and generate higher profit margins in the resale market.
+
+- Capitalize on brand perception by targeting devices from brands with strong resale performance, such as Nokia and Xiaomi, which consistently hold value better over time.
+
+- Explore product diversification, particularly in the resale of complementary tech devices like smartwatches, which may attract niche segments of tech-oriented consumers.
+
+- Collect and analyze customer demographic data (e.g., age, income, preferences) to better understand buyer behavior and tailor pricing strategies for different market segments.
+
+- By extending the lifecycle of electronic devices through second-hand markets, ReCell promotes sustainability in a meaningful way. This approach reduces the demand for raw materials, prevents toxic waste from entering landfills, and significantly lowers the carbon footprint associated with smartphone production. This is especially important considering that, according to Deloitte, in 2022 over 1.4 billion smartphones were shipped globally, generating 146 million tons of CO₂e nearly 0.5% of total global emissions. About 83% of these emissions came from manufacturing, shipping, and first-year use, underscoring the urgent need to reduce device turnover and embrace more circular consumption habits.
+
+By implementing these strategies, ReCell can enhance both its profitability and its positive environmental impact. The insights derived from this analysis provide a clear roadmap to optimize sourcing, pricing, and market segmentation while aligning with sustainability goals. Moreover, by embracing circular practices, ReCell positions itself to attract a growing segment of environmentally conscious consumers who value responsible business models. Ultimately, leveraging data-driven decisions not only strengthens ReCell’s position in the refurbished tech market, but also supports a more sustainable economy. 
 
 
 
