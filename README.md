@@ -329,7 +329,7 @@ The **Linear Regression** model explains **80%** of the variation in resale pric
 
 ---
 ## Recommendations
-- Focus on acquiring newer devices with higher RAM, quality cameras, and 4G connectivity, as these features are strongly associated with better resale value and greater appeal to second-hand buyers.
+- Focus on acquiring newer devices with higher RAM, quality cameras, and 4G connectivity, as these features are strongly associated with better resale value and greater appeal to second hand buyers.
 
 - Prioritize sourcing premium models that had a high original price, as they tend to retain more value and generate higher profit margins in the resale market.
 
@@ -337,11 +337,19 @@ The **Linear Regression** model explains **80%** of the variation in resale pric
 
 - Explore product diversification, particularly in the resale of complementary tech devices like smartwatches, which may attract niche segments of tech-oriented consumers.
 
-- Collect and analyze customer demographic data (e.g., age, income, preferences) to better understand buyer behavior and tailor pricing strategies for different market segments.
+- Collect more data like customer demographic data (e.g., age, income, preferences) to better understand buyer behavior and tailor pricing strategies for different market segments.
 
-- By extending the lifecycle of electronic devices through second-hand markets, ReCell promotes sustainability in a meaningful way. This approach reduces the demand for raw materials, prevents toxic waste from entering landfills, and significantly lowers the carbon footprint associated with smartphone production. This is especially important considering that, according to Deloitte, in 2022 over 1.4 billion smartphones were shipped globally, generating 146 million tons of CO₂e nearly 0.5% of total global emissions. About 83% of these emissions came from manufacturing, shipping, and first-year use, underscoring the urgent need to reduce device turnover and embrace more circular consumption habits.
+- It is recommended that ReCell launch a targeted sustainability campaign to strengthen its brand and attract environmentally conscious customers. By promoting the reuse of electronic devices, the company can reduce production-related CO₂ emissions, minimize toxic waste, and stand out in the refurbished tech market. This strategy not only aligns with global sustainability trends, but also offers a clear competitive advantage and access to a growing segment of eco-aware consumers.
 
-By implementing these strategies, ReCell can enhance both its profitability and its positive environmental impact. The insights derived from this analysis provide a clear roadmap to optimize sourcing, pricing, and market segmentation while aligning with sustainability goals. Moreover, by embracing circular practices, ReCell positions itself to attract a growing segment of environmentally conscious consumers who value responsible business models. Ultimately, leveraging data-driven decisions not only strengthens ReCell’s position in the refurbished tech market, but also supports a more sustainable economy. 
+---
+## Conclusion 
 
+<p align="justify">
 
+By applying these insights, ReCell can enhance profitability, manage inventory more efficiently, and better align product offerings with market demand, focusing on devices that truly add value rather than overstocking. As a forward looking strategy, ReCell could also replicate this model to expand into other refurbished tech categories such as smartwatches or accessories, unlocking new growth opportunities.
 
+Additionally, I recommend launching a sustainability focused campaign to strengthen ReCell’s ESG profile by promoting device reuse and circular economy practices. This approach not only reduces environmental impact but also appeals to a growing segment of consumers who actively support responsible business models.
+
+Combining data driven decisions with sustainability and product diversification will reinforce ReCell’s competitive position and support long term success in the evolving sustainable economy.
+
+</p>
