@@ -344,12 +344,12 @@ The **Linear Regression** model explains **80%** of the variation in resale pric
 ---
 ## Conclusion 
 
-<p align="justify">
+<div align="justify">
 
-By applying these insights, ReCell can enhance profitability, manage inventory more efficiently, and better align product offerings with market demand, focusing on devices that truly add value rather than overstocking. As a forward looking strategy, ReCell could also replicate this model to expand into other refurbished tech categories such as smartwatches or accessories, unlocking new growth opportunities.
+By applying these insights, ReCell can enhance profitability, manage inventory more efficiently, and better align product offerings with market demand, focusing on devices that truly add value rather than overstocking.As a forward looking strategy, ReCell could also replicate this model to expand into other refurbished tech categories such as smartwatches or accessories, unlocking new growth opportunities.
 
 Additionally, I recommend launching a sustainability focused campaign to strengthen ReCell’s ESG profile by promoting device reuse and circular economy practices. This approach not only reduces environmental impact but also appeals to a growing segment of consumers who actively support responsible business models.
 
 Combining data driven decisions with sustainability and product diversification will reinforce ReCell’s competitive position and support long term success in the evolving sustainable economy.
 
-</p>
+</div> 
