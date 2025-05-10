@@ -12,48 +12,45 @@ To support its growth, ReCell seeks to optimize pricing through data driven stra
 
 </div>
 
+---
+
 ## Executive Summary
 
 <div align="justify
+  
+The model demonstrates solid performance, explaining approximately **80% of the variation** in resale prices, indicating a strong fit. It maintains consistent accuracy across both training and test sets, with an average prediction error of **4.8%** on normalized prices reflecting high reliability.
+
+Key predictors such as **RAM, camera quality, 4G connectivity**, and the **original new price** have a significant positive impact on resale value, while **device age** and **uncommon operating systems** reduce it. The model also highlights that certain brands, like **Nokia and Xiaomi**, retain value better over time.
 
 </div>
 
-## 📂Dataset
+---
 
-### Dataset Overview
-The original dataset contained 3,454 rows and 15 columns. An additional 5,000 synthetic rows were generated to help apply more advanced modeling techniques and demonstrate scalability, model behavior, and business insights, while preserving the original data structure and missing value patterns. This resulted in a total of 8,454 observations with the same structure.
+## Exploratory Data Analysis (EDA)
 
-#### Device specs:
-Device Specifications:
-brand_name, os, screen_size, main_camera_mp, selfie_camera_mp, int_memory, ram, battery, weight, 4g, 5g
+The dataset used in this project contains **8,454 rows** and **15 columns**, where each row represents a refurbished or used mobile device listed for resale. Collected in 2021, the data includes a combination of technical specifications, usage characteristics, and pricing information. 
 
-#### Usage & Pricing Data:
-release_year, days_used, normalized_new_price, normalized_used_price
+The dataset is primarily numeric, and a few categorical fields such as brand and OS. There are no duplicate records, but a small number of **missing values** are present in columns related to hardware specifications such as main_camera_mp, selfie_camera_mp, int_memory, ram, battery, and weight.
 
-#### Independent variable 
-The target variable is **normalized_used_price**, representing the resale price normalized across brands/models.
+ **Data Dictionary:**
 
-#### Missing Values:
-To simulate real world data imperfections, a proportion of missing values was intentionally introduced in the synthetic portion of the dataset. These missing values follow the same patterns and frequencies as those found in the original data.
+- **brand_name**: Name of the manufacturing brand  
+- **os**: Operating system running on the device  
+- **screen_size**: Size of the screen in centimeters  
+- **4g**: Indicates whether 4G is available (Yes/No)  
+- **5g**: Indicates whether 5G is available (Yes/No)  
+- **main_camera_mp**: Rear camera resolution in megapixels  
+- **selfie_camera_mp**: Front camera resolution in megapixels  
+- **int_memory**: Internal storage capacity (ROM) in GB  
+- **ram**: RAM capacity in GB  
+- **battery**: Battery size in milliamp-hours (mAh)  
+- **weight**: Device weight in grams  
+- **release_year**: Year the device model was launched  
+- **days_used**: Number of days the device has been in use  
+- **normalized_new_price**: Normalized price of a new device of the same model (in euros)  
+- **normalized_used_price**: Normalized resale price of the used/refurbished device (in euros)  **target variable**
 
-- main_camera_mp  
-- selfie_camera_mp  
-- int_memory  
-- ram  
-- battery  
-- weight
-  
-# Exploratory Data Analysis (EDA)
-
-#### Structure and Characteristics 
-- Shape: 8,454 rows × 15 columns
-- Data types: Mostly float, with some object (categorical) and a few integer columns
-- Duplicates: None found
-- Missing values: 491 missing entries, mainly in columns related to device specifications (these will be handled in the preprocessing stage)
-
-#### Variable distributions
-
-Univariate Analysis 
+## Univariate Analysis
 
 Both normalized used and new device prices show an approximately normal distribution, with slight skewness and some outliers.
 
