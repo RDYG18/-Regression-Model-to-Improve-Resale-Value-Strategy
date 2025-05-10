@@ -50,6 +50,8 @@ The dataset is primarily numeric, and a few categorical fields such as brand and
 - **normalized_new_price**: Normalized price of a new device of the same model (in euros)  
 - **normalized_used_price**: Normalized resale price of the used/refurbished device (in euros)  **target variable**
 
+---
+
 ## Univariate Analysis
 
 Both normalized used and new device prices show an approximately normal distribution, with slight skewness and some outliers.
