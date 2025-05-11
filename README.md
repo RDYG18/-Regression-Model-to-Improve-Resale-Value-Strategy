@@ -102,12 +102,12 @@ Samsung, Huawei, and LG are the most represented brands in the dataset, excludin
 
 **RAM**
 
-The RAM is one of the most important components of a phone, as it directly affects the device's speed, multitasking capabilities, and overall user experience. In other words brands with higher RAM models may demand higher resale prices and target different customer segments.  
+Does higher RAM lead to higher resale value, and do brands with more RAM target different market segments through pricing?
 
 
 ![image](https://github.com/user-attachments/assets/7f816ea0-f9c7-4ba4-8d84-25e8b06c0e19)
 
-Boxplot insights: 
+Interpretation:
 
 - **OnePlus**, **Nokia**, **Honor**, and **Huawei** offer higher RAM devices, meaning targeting mid to high end segments.
 
@@ -117,17 +117,18 @@ Boxplot insights:
 
 - **Apple** maintains lower RAM levels, consistent with its hardware software optimization strategy.
 
+
 ---
 
 **Battery**
 
-Since smartphones have become an essential tool in our daily lives, we need devices with high battery capacity to support daily usage. However, as observed in the correlation heatmap and weight distribution analysis, an increase in battery capacity often results in a heavier devices. 
+Does higher battery capacity lead to significantly heavier devices, and how does this trade off influence design and resale value?
 
- **note**: For this boxplot, I selected devices with battery capacities above 4500 mAh in order to focus on models with large batteries.  
+ **note**: For this boxplot, I focused on the relationship between battery size and weight by analyzing only smartphones with **battery capacities above 4500 mAh**, allowing for a clearer comparison of **device weight across brands** with large batteries.
 
 ![image](https://github.com/user-attachments/assets/e466c6a6-c758-482f-ab1a-b0200c378e4e)
 
-Boxplot insights: 
+Interpretation: 
 
 - **Huawei**, **Lenovo**, **LG**, **Apple**, **Asus**, **Acer**, **Alcatel**, and **Samsung** show high median weights, often exceeding 400g, likely due to large batteries or heavier components.
 
@@ -140,22 +141,23 @@ Boxplot insights:
 - **Samsung**, **Apple**, and **Huawei** present notable outliers, pointing to some heavier models, possibly due to premium materials or larger displays.
 
 ---
-SCREEN
 
-The demand for large screens, driven by entertainment and social media use, is pushing users to buy better phones and tablets increasing device prices.  
+**Screen**
 
- **note**: This barplot includes only devices with screen sizes larger than 6 inches (the standard threshold) to focus on phones with larger displays. The shape of the filtered dataset is (2511, 15).
+Does larger screen size lead to higher resale prices, and how does screen demand influence user preferences and market value in the second-hand device market?.  
+
+ **note**: This barplot includes only devices with screen sizes larger than 6 inches (the standard threshold) to focus on phones with larger displays.
 
 
 <img src="https://github.com/user-attachments/assets/c5e4158d-63ae-4c7e-b30c-b0719d9915ba" width="800"/>
 
 
 
-Barplot insights: 
+Interpretation: 
 
-- **Huawei** and **Samsung** lead in large-screen devices, with 382 and 326 models respectively, highlighting a strong focus on display size.
+- **Huawei** and **Samsung** lead in large screen devices, with 382 and 326 models respectively, highlighting a strong focus on display size.
 
-- The **"Others"** category also contributes significantly, showing that the large-screen trend extends beyond major brands.
+- The **"Others"** category also contributes significantly, showing that the large screen trend extends beyond major brands.
 
 - **Honor** and **Vivo** follow with over 170 devices each, suggesting that large screens are standard across their product lines.
 
@@ -164,15 +166,15 @@ Barplot insights:
 - **Oppo** and **Asus**, while lower in count, still offer large-screen models, likely focusing on other components .
 
 ---
-SELFIE CAMERA
 
-One of the most important aspects of a phone or tablet perhaps the most important is the camera. In particular, the selfie camera plays a key role, as a high quality front camera often increases the device’s price.
+**Selfie Camera**
 
- **note**: In order to analyze which brands offer the best selfie cameras on the market, we filtered the dataset to include only devices with front cameras higher than 8 MP. The shape of the filtered dataset is (1494,15).
+Does higher selfie camera quality lead to increased resale prices, and how significant is the front camera in shaping consumer value perception?
 
+ **note**: In order to analyze which brands offer the best selfie cameras on the market, we filtered the dataset to include only devices with front cameras higher than 8 MP. 
  <img src="https://github.com/user-attachments/assets/ff35446f-f6ba-4206-af41-ce9f45e61f72" width="800"/>
 
- barplot insights: 
+ Interpretation: 
 
  - **Huawei** leads featuring front cameras above 8 MP, showing a strong focus on selfie camera quality.
 
@@ -185,27 +187,29 @@ One of the most important aspects of a phone or tablet perhaps the most importan
 - The **"Others"** category, suggests that many lesser-known brands also compete in the high selfie camera segment.
 
 ---
-MAIN CAMERA
 
-While the selfie camera plays a key role in today’s social media-driven usage, the main (rear) camera remains a critical factor in a device’s overall value and performance. High resolution rear cameras are strongly associated with premium models, as they are essential for photography, video recording, and professional content creation.
+**Main Camera**
 
-**note**: In order to analyze which brands offer the best main cameras on the market, we filtered the dataset to include only devices with main cameras higher than 16 MP. The shape of the filtered dataset is (218,15).
+How does rear camera resolution influence resale value, and to what extent is it associated with premium device positioning in a content driven market?
+
+**note**: In order to analyze which brands offer the best main cameras on the market, we filtered the dataset to include only devices with main cameras higher than 16 MP. 
 
 <img src="https://github.com/user-attachments/assets/d4ccdc27-812d-4326-8b4d-1cefc2842fe1" width="800"/>
 
 
-barplot insights: 
+Interpretation:
 
 - **Sony** leads the category, highlighting a strong focus on high quality main cameras.
 
 - **Motorola** and **"Others"** also are in the podium of main cameras.  
 
-- **HTC**, **ZTE**, **Nokia**, and **Microsoft** fall in the mid-range, indicating a moderate emphasis on main camera resolution.
+- **HTC**, **ZTE**, **Nokia**, and **Microsoft** fall in the mid range, indicating a moderate emphasis on main camera resolution.
 
 - **Meizu**, **Samsung**, and **Asus** appear at the lower end, suggesting they either prioritize other features or offer more balanced camera specifications.
 
 ---
-4G OR 5G NETWORKS
+
+**4G OR 5G Network**
 
 The presence of 4G and 5G connectivity features affects the normalized resale price of phones and tablets in the second hand market. 
 
