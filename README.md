@@ -235,9 +235,9 @@ From 2013 to 2019, used device prices showed a steady increase, suggesting that 
 
 ## Data Preprocessing
 
-## Missing value tratment 
+**Missing Value Tratment** 
 
-As mentioned earlier, we identified 491 missing values in key columns such as main_camera_mp, selfie_camera_mp, int_memory, ram, battery, and weight. To handle them, we applied group-based imputation by grouping the data by brand_name and release_year, two columns without missing values. We used the median within each group to fill the missing values, as these columns contain outliers and the median is more robust than the mean. This method provides more accurate and context aware imputations compared to using a single global value.
+As mentioned earlier, we identified **491 missing values** in key columns such as main_camera_mp, selfie_camera_mp, int_memory, ram, battery, and weight. To handle them, we applied group based imputation by grouping the data by brand_name and release_year, two columns without missing values. We used the median within each group to fill the missing values, as these columns contain outliers and the median is more robust than the mean. This method provides more accurate and context aware imputations compared to using a single global value.
 
 
 <table>
@@ -247,8 +247,9 @@ As mentioned earlier, we identified 491 missing values in key columns such as ma
   </tr>
 </table>
 
----
-## Feature Engineering
+
+
+**Feature Engineering**
 
 We are going to create a new column, years_since_release, by calculating the difference between the current year (2021) and the release_year of the product, using 2021 as a reference year to avoid altering the analysis of the recorded years. This transformation is more useful than the original release_year because the product's age is often more relevant for predictive models. After creating years_since_release, we drop the release_year column to avoid redundancy.
 
@@ -258,7 +259,8 @@ variable insights:
 
 The majority of devices were released between 3 and 7 years ago, with a median age of around 5 years. The distribution is balanced and free of outliers, making it suitable for modeling resale trends, depreciation, and user preferences across different product ages.
 
-## Outlier check and Treatment 
+
+**Outlier Check** 
 
 There are several outliers present in the dataset. However, we decided not to treat them, as they reflect valid and realistic values rather than errors or anomalies. Removing these points could distort the natural distribution and compromise the integrity of the analysis.
 
@@ -266,31 +268,30 @@ There are several outliers present in the dataset. However, we decided not to tr
  <img src="https://github.com/user-attachments/assets/9dd4f5d3-e1c3-4968-97b0-50621709a846" width="500"/>
 
 ---
-## Data preparation for modeling
 
-To prepare the data for modeling, we first separated the target variable normalized_used_price from the independent variables. We then added a constant term to the features to account for the intercept in the linear regression model. Since the dataset includes categorical features, we applied one-hot encoding using pd.get_dummies, dropping the first level of each category to avoid multicollinearity and converting the result to integer type. After preprocessing, we split the dataset into training and testing sets using a 70:30 ratio with a fixed random state for reproducibility. This setup ensures that the data is clean, numerical, and properly structured for training a Linear Regression model and evaluating its performance on unseen data.
+## Model Building
+
+**Data preparation** 
+
+The data was preprocessed by encoding categorical variables, adding a constant for the intercept, and splitting it into 70% training and 30% test. This ensured the dataset was clean, numeric, and ready for Linear Regression modeling and evaluation.
 
 --- 
 
-# Modeling Linear Regression 
+## Linear Regression Model
 
- We first trained a baseline linear regression model using all available features after encoding and preprocessing. This initial model served as a reference to identify multicollinearity and statistically insignificant variables, which i will treathtem later. The model’s performance was assessed using standard regression metrics. 
- 
-![image](https://github.com/user-attachments/assets/cb3a7ebc-5a82-41f1-8aeb-02313f32804f)
-![image](https://github.com/user-attachments/assets/efd22dba-f8c2-4285-b6c8-b90a2e4a582b)
+The model explains over **80% of the variance** in the target variable and maintains low prediction error on both training and test sets, indicating strong generalization and no signs of overfitting. With a **MAE** of **20%**, it predicts normalized resale prices with minimal average deviation. Finally, a **MAPE** of **4.8%** confirms the model’s ability to estimate resale prices within a tight and practical margin, making it suitable for real world pricing strategies.
 
-Baseline model insights: 
 
-The model explains over 80% of the variance in the target variable and shows low prediction error on both training and test sets, indicating strong generalization and no overfitting. The MAE is around 0.20, meaning the model predicts normalized prices with a small average error. As expected, RMSE is slightly higher due to its sensitivity to larger errors. A MAPE of ~4.8% confirms the model can predict resale prices within a narrow and acceptable margin of error, making it suitable for real-world applications.
-
-## Test for Multicollinearity and Treatment
-
-To detect multicollinearity among the independent variables, I applied the Variance Inflation Factor (VIF). The test revealed that some numerical variables exhibited high multicollinearity, which could negatively affect the model's reliability. To address this, I removed three variables with high VIF values: screen_size, brand_name_Apple, and brand_name_Others. After dropping these columns, the remaining numerical features showed VIF scores below the common thresholds (under 5 or 10), indicating that multicollinearity was successfully reduced and the model is now more stable and interpretable.
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/efd22dba-f8c2-4285-b6c8-b90a2e4a582b" alt="image" width="500"/>
+</p>
 
 ---
-## Treat high p-values 
 
-To improve the model, I removed variables with p-values greater than 0.05, as they are not statistically significant. Since p-values can change when variables are dropped, I applied an iterative approach: at each step, I removed the variable with the highest p-value, rebuilt the model, and repeated the process until all remaining features had p-values ≤ 0.05. This method ensures that only meaningful predictors are retained, improving the model's interpretability and stability.
+## Multicollinearity and Treat High P-values
+
+To improve model stability and interpretability, I first addressed multicollinearity by calculating the VIF. The analysis revealed that some features such as screen_size, brand_name_Apple, and brand_name_Others had high multicollinearity, which could distort coefficient estimates. These variables were removed, reducing VIF scores across the remaining features to acceptable levels. Additionally, I refined the model by eliminating variables with **p-values greater than 0.05**, as they were not statistically significant. This two step feature selection process enhanced the model’s robustness and ensured that only meaningful predictors were retained.
+
 
 ---
 
@@ -298,7 +299,12 @@ To improve the model, I removed variables with p-values greater than 0.05, as th
 
 The **Linear Regression** model explains **80%** of the variation in resale prices and predicts used device values with an average error of just **4.8%**. This makes it a reliable tool for estimating second-hand value and supporting smarter pricing decisions. Also, the model shows which aspects of a phone increase its resale value and which brands retain their value.
 
-### Key Aspects:
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/08b7172d-de91-4ce1-971e-82dbf29c26b7" alt="image" width="500"/>
+</p>
+
+
+## Insights
 
 - Devices with more memory (**RAM**) are worth more in the second hand market, increasing resale value by **0.0344 units**.
 - Both **rear** and **selfie camera** quality have a positive impact  the higher the megapixels, the better the resale value, increasing it by **0.0261** and **0.0182 units**, respectively.
@@ -315,20 +321,8 @@ The **Linear Regression** model explains **80%** of the variation in resale pric
 - Brands like **Nokia**, **Xiaomi**, **Asus**, and **BlackBerry** tend to hold value better over the years.
 - **Micromax**, **Motorola**, and **ZTE** have lower resale prices as time passes.
 
-
-![image](https://github.com/user-attachments/assets/89b45ff9-794a-42f8-b9d1-7a66dcc7e733)
-![image](https://github.com/user-attachments/assets/51004fd7-8ba9-4c20-a62c-39bfb06f6a9c)
-
-
-
-<table>
-  <tr>
-    <td><img src="https://github.com/user-attachments/assets/d20b2577-5518-4d20-baf4-68cf2bf9362b" width="800"/></td>
-    <td><img src="https://github.com/user-attachments/assets/a50646ca-47c9-4527-bbca-9992b357f358" width="800"/></td>
-  </tr>
-</table>
-
 ---
+
 ## Recommendations
 - Focus on acquiring newer devices with higher RAM, quality cameras, and 4G connectivity, as these features are strongly associated with better resale value and greater appeal to second hand buyers.
 
