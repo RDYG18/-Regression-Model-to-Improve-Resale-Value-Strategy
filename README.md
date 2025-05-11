@@ -329,21 +329,23 @@ The **Linear Regression** model explains **80%** of the variation in resale pric
 
 ---
 
-## Recommendations
-- Focus on acquiring newer devices with higher RAM, quality cameras, and 4G connectivity, as these features are strongly associated with better resale value and greater appeal to second hand buyers.
+## Business Recommendations
 
-- Prioritize sourcing premium models that had a high original price, as they tend to retain more value and generate higher profit margins in the resale market.
+- **Acquire high spec devices**: Focus on sourcing newer smartphones with **higher RAM**, **better camera quality**, and **4G connectivity**, as these features are linked to stronger resale value and higher buyer appeal in the second hand market.
 
-- Capitalize on brand perception by targeting devices from brands with strong resale performance, such as Nokia and Xiaomi, which consistently hold value better over time.
+- **Prioritize premium models**: Devices that had **higher original prices** retain value better and offer greater resale margins. Prioritizing these models can improve both revenue and inventory efficiency.
 
-- Explore product diversification, particularly in the resale of complementary tech devices like smartwatches, which may attract niche segments of tech-oriented consumers.
+- **Leverage strong brands**: Target devices from brands with historically **strong resale performance**, such as **Nokia** and **Xiaomi**, which consistently retain value and buyer trust over time.
 
-- Collect more data like customer demographic data (e.g., age, income, preferences) to better understand buyer behavior and tailor pricing strategies for different market segments.
+- **Diversify product offerings**: Consider expanding into complementary devices like **smartwatches**, which can attract tech savvy niche markets and increase average basket value.
 
-- It is recommended that ReCell launch a targeted sustainability campaign to strengthen its brand and attract environmentally conscious customers. By promoting the reuse of electronic devices, the company can reduce production-related CO₂ emissions, minimize toxic waste, and stand out in the refurbished tech market. This strategy not only aligns with global sustainability trends, but also offers a clear competitive advantage and access to a growing segment of eco-aware consumers.
+- **Enhance customer segmentation**: Collect additional data (e.g., **age, income, preferences**) to better understand buyer behavior and optimize pricing strategies for different consumer segments.
+
+- **Position ReCell as a sustainable brand**: Launch a targeted campaign that promotes **reuse of electronics** to reduce CO₂ emissions and e-waste. This not only aligns with global sustainability trends, but also strengthens brand identity and appeals to a growing segment of **eco conscious consumers**.
 
 ---
-## Conclusion 
+
+## Assumptions & Limitations
 
 <div align="justify">
 
@@ -354,3 +356,7 @@ Additionally, I recommend launching a sustainability focused campaign to strengt
 Combining data driven decisions with sustainability and product diversification will reinforce ReCell’s competitive position and support long term success in the evolving sustainable economy.
 
 </div> 
+
+--- 
+
+## Setup Instructions
