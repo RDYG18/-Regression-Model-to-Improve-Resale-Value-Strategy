@@ -211,26 +211,29 @@ Interpretation:
 
 **4G OR 5G Network**
 
-The presence of 4G and 5G connectivity features affects the normalized resale price of phones and tablets in the second hand market. 
+How does the presence of 4G or 5G connectivity affect the normalized resale price of devices in the second-hand market? 
 
 ![image](https://github.com/user-attachments/assets/4faca113-65a2-470a-bcae-3cb09ea49ccc)
 
-boxplot insights: 
 
-- Devices with 4G support have higher and more consistent resale prices, confirming 4G as a standard feature in the used market.
+Interpretation: 
 
-- 5G enabled devices show even higher median prices, often linked to newer or premium models especially considering that, at the time this data was collected, 5G was still an emerging technology.
+- Devices with **4G** support have **higher** and more consistent resale prices, confirming 4G as a standard feature in the used market.
+
+- **5G** enabled devices show even higher median prices, often linked to newer or premium models especially considering that, at the time this data was collected, 5G was still an emerging technology.
 
 
 ---
-PRICES ACROSS YEARS
+
+**Prices Across Years**
 
 From 2013 to 2019, used device prices showed a steady increase, suggesting that newer models retain more resale value. Although there was a slight drop in 2020 possibly due to market saturation or rapid technological advancement the overall trend indicates that used phones are becoming more valuable, driven by better durability, higher original prices, and growing interest in sustainable tech.
 
   <img src="https://github.com/user-attachments/assets/e289b222-5b60-4b19-a66e-cb5cc972ba60" width="800"/>
 
 ---
-# Data Preprocessing
+
+## Data Preprocessing
 
 ## Missing value tratment 
 
