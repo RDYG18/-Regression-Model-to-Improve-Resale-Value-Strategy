@@ -306,20 +306,26 @@ The **Linear Regression** model explains **80%** of the variation in resale pric
 
 ## Insights
 
-- Devices with more memory (**RAM**) are worth more in the second hand market, increasing resale value by **0.0344 units**.
-- Both **rear** and **selfie camera** quality have a positive impact  the higher the megapixels, the better the resale value, increasing it by **0.0261** and **0.0182 units**, respectively.
-- **Heavier phones** tend to have higher resale prices, possibly due to better build quality or more features  increases resale value by **0.0017**.
-- **4G connectivity** increases resale value by **0.0872 units** compared to non 4G devices.
-- The **normalized new price** shows that premium models retain value better, as they often have superior features, materials, and brand reputation.  
-- For every **1 unit increase** in normalized new price, the resale value increases by **0.3005 units** in the normalized used price.
-- **Battery capacity** has a small positive effect, increasing resale value by **0.00001771 units**.
-- **Years since release** negatively impacts price each additional year decreases value by **0.0119 units**.
-- Devices with **uncommon operating systems** tend to have lower resale value, decreasing it by **0.1625 units**.
+- **RAM matters**: Devices with more memory are more valuable in the second-hand market. Each additional GB of RAM increases the resale price by approximately **0.0344 units**, reflecting user preference for performance and multitasking.
 
-### Brands Value:
+- **Camera quality drives value**: Both rear and selfie cameras influence price. Each extra megapixel adds **0.0261** and **0.0182 units**, respectively, to the resale value—showing that photography remains a key purchase driver.
 
-- Brands like **Nokia**, **Xiaomi**, **Asus**, and **BlackBerry** tend to hold value better over the years.
-- **Micromax**, **Motorola**, and **ZTE** have lower resale prices as time passes.
+- **Heavier devices resell for more**: A higher weight, often linked to better build quality or more features, slightly increases resale price by **0.0017 units** per gram.
+
+- **4G connectivity boosts value**: Devices with 4G sell for **0.0872 units** more on average, indicating continued demand for basic mobile speed standards in refurbished markets.
+
+- **Premium devices hold value**: For every **1 unit** increase in the normalized new price, the resale value rises by **0.3005 units**, highlighting strong brand and feature retention in premium models.
+
+- **Battery capacity has minor impact**: While relevant to user experience, its effect on resale is limited—each additional mAh only increases value by **0.00001771 units**.
+
+- **Age reduces price**: Every additional year since release lowers resale value by **0.0119 units**, underlining the importance of model freshness.
+
+- **Operating system influences value**: Devices running **uncommon OS** tend to depreciate more, reducing resale price by **0.1625 units**, likely due to lower compatibility and support.
+
+- **Brand matters**:
+- 
+  - Brands like **Nokia**, **Xiaomi**, **Asus**, and **BlackBerry** retain value better over time, possibly due to durability or loyal user bases.  
+  - **Micromax**, **Motorola**, and **ZTE** show steeper price declines, suggesting lower perceived value in secondary markets.
 
 ---
 
