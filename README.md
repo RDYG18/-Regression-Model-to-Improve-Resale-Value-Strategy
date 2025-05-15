@@ -1,4 +1,4 @@
-# Improve Resale Value Strategy
+# Improve Resale Value Strategy - ReCell
 
 ![image](https://github.com/user-attachments/assets/68bfad6f-8fc9-4cfa-a125-6901881bb1e8)
 
